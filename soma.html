@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <head>
-            <meta charset="utf-8"/>
-            <script>
-                function calcular(op1, op2){
-                    Number(op1);
-                    Number(op2);
-                    if((op1!='') && (op2!='')){
-                        //resultado = Number(op1) + Number(op2);
-                        document.getElementById('resultado').value = Number(op1) + Number(op2);
-                    }
+    <head>
+        <meta charset="utf-8"/>
+        <script>
+            function calcular(op1, op2){
+                Number(op1);
+                Number(op2);
+                if((op1!='') && (op2!='')){
+                    //resultado = Number(op1) + Number(op2);
+                    document.getElementById('resultado').value = Number(op1) + Number(op2);
                 }
-            </script>
-        </head>
+            }
+        </script>
+    </head>
+    <body>
         <form name="form">
             <input type="number" name="op1" placeholder="operando 1"/>
             +
