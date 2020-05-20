@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head>
+            <meta charset="utf-8"/>
+            <script>
+                function calcular(op1, op2){
+                    Number(op1);
+                    Number(op2);
+                    if((op1!='') && (op2!='')){
+                        //resultado = Number(op1) + Number(op2);
+                        document.getElementById('resultado').value = Number(op1) + Number(op2);
+                    }
+                }
+            </script>
+        </head>
+        <form name="form">
+            <input type="number" name="op1" placeholder="operando 1"/>
+            +
+            <input type="number" name="op2" placeholder="operando 2"/>
+            =
+            <input type="number" id="resultado" name="resultado" placeholder="resultado" readonly="readonly" value=''/>
+            <br/>
+            <br/>
+            <button type="button" onclick="calcular(document.form.op1.value, document.form.op2.value)">Calcular</button> 
+            <button type="reset">Limpar</button>
+        </form>
+    </body>
+</html>
